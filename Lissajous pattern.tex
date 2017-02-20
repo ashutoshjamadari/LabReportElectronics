@@ -1,0 +1,78 @@
+\documentclass[onecolumn,12pt]{article}
+%\twocolumn
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+%\usepackage{cite}
+
+\begin{document}
+
+\title{A sample LaTeX file}
+\author{ Mona Subramaniam and Vijender Sharma; (Research Scholars)}
+\date{ prepared on \today}
+
+\maketitle
+%\today
+
+\begin{abstract}
+you can write the abstract of your work here ... 
+\end{abstract}
+
+
+
+\listoftables
+\listoffigures
+
+\newpage
+
+\section{Introduction}
+This is sample section.\newline this is how we cite\cite{LatexLearn}
+\subsubsection{Subsubsection}
+This is sample subsubsection.
+\newline Refer to the Math equation \ref{eqn:yf} below
+\begin{equation}
+%\tiny
+{A_3 = \frac{K_2 K_3 A}{64(K_3 V_{cmi}+K_4)(2K_1\sqrt{K_3 V_{cmi}+K_4}-K_2 K_3)}}
+\label{eqn:yf}
+\end{equation}
+
+
+
+
+\begin{table}[h]
+	\centering
+	\caption{ An example table}
+	\label{table:bwg}
+\begin{tabular}{|c|c|c|c|}
+	\hline
+	Process & Bandwidth & Gain & SR\\
+	corner & (GHz) & (dB) & (v/ns)\\
+	\hline
+	ss & 1 & 50 & 10 \\
+	\hline
+	tt & 1.2 & 45 & 20 \\
+	\hline
+	ff & 1.4 & 55 & 0.1 \\
+	\hline
+\end{tabular}
+
+\end{table}
+
+
+
+
+\begin{thebibliography}{9}
+
+	\bibitem{LatexLearn} 
+	ShareLatex Documentation
+	\\\texttt{https://www.sharelatex.com/learn}
+	
+	\bibitem{UserGuide} 
+Leslie Lamport 
+\textit{LATEX A document preparation system user's guide and Reference Manual}. 
+Pearson, Tenth Impressions, 2015.
+
+
+	
+\end{thebibliography}
+\end{document}
